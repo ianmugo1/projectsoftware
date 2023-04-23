@@ -1,0 +1,184 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f7f7f7;
+    color: #333;
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styles */
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Main Styles */
+main {
+    margin-top: 80px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.button {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #333;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+    }
+    
+    nav ul {
+        margin-top: 10px;
+        flex-direction: column;
+    }
+    
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .products {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .products li {
+        width: 20%;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.5;
+    }
+    
+    h1, h2, h3 {
+        margin-top: 0;
+    }
+    
+    h1 {
+        font-size: 36px;
+    }
+    
+    h2 {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+    
+    h3 {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+    
+    p {
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+    
+    form label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    
+    form input[type="text"],
+    form input[type="email"],
+    form input[type="password"],
+    form textarea {
+        display: block;
+        width: 100%;
+        max-width: 400px;
+        padding: 10px;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+    }
+    
+    form input[type="submit"] {
+        background-color: #4CAF50; /* Green */
+        border: none;
+        color: white;
+        padding: 12px 20px;
+        text-decoration: none;
+        margin: 4px 2px;
+        cursor: pointer;
+    }    
+}
